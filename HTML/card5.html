@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../CSS/card5.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+     <!--IconScout CDN Link-->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+     <div class="card">
+          <div class="top">
+               <div class="userDetails">
+                    <div class="profile_img">
+                         <img src="../IMAGE_VIDEO/profile_avater.jpg" class="cover" alt="">
+                    </div>
+                    <h3>online_tutorials<br><span>Patna, India</span></br></h3>
+               </div>
+               <div>
+                    <img src="../ICON/doots.svg" class="dote" alt="">
+               </div>
+          </div>
+          <div class="imgBx">
+               <img src="../IMAGE_VIDEO/feed/feed-3.jpg" class="cover" alt="">
+          </div>
+          <div class="actionBtns">
+               <div class="left">
+                    <!-- <span ><i class="uil uil-heart"></i></span>
+                    <span><i class="uil uil-comment-dots"></i></span>
+                    <span><i class="uil uil-share"></i></span> -->
+                    <img src="../ICON/finan/favorite_1.svg" class="heart" onclick="likeButton()" alt="">
+
+                    <img src="../ICON/finan/chat_1.svg" alt="">
+
+                    <img src="../ICON/finan/share_1.svg" alt="">
+               </div>
+               <div class="right">
+                    <!-- <span><i class="uil uil-bookmark"></i></span> -->
+                    <img src="../ICON/finan/bookmark_1.svg" alt="">
+               </div>
+          </div>
+          <h4 class="likes">3,684 likes</h4>
+          <h4 class="message"><b>online_Coding_Nasim</b>Love Spachel card cord <span>#cards</span><span>#html</span> <span>#css</span></h4>
+          <h4 class="comments">View all 245</h4>
+          <div class="addComments">
+               <div class="userImg">
+                    <img src="../IMAGE_VIDEO/sop_pro.png" alt="">
+               </div>
+               <input type="text" class="text" placeholder="Add a comment....">
+          </div>
+          <h5 class="postTime">3 hours ago</h5>
+     </div>
+     <script>
+          function likeButton(){
+               let heart = document.querySelector('.heart');
+               let likes = document.querySelector('.likes');
+               if (heart.src.match("../ICON/finan/favorite_1.svg")){
+                    heart.src = "../ICON/finan/favorite_2.svg";
+                    likes.innerHTML = "3,685 likes";
+               }
+               else{
+                    heart.src = "../ICON/finan/favorite_1.svg";
+                    likes.innerHTML = "3,684 likes";
+               }
+          }
+     </script>
+</body>
+</html>
