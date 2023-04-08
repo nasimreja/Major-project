@@ -1,0 +1,96 @@
+/* <!--===============MARNE SECTION======================--> */
+body{
+  background-color: darkgray;
+}
+.container{
+  width: 88%;
+  margin: 0 auto;
+}
+main{
+  position: relative;
+  top: 5.4rem;
+  /* top: 37px; */
+}
+main .container{
+  display: grid;
+  grid-template-columns: 18vw auto 20vw;
+  /* grid-template-columns: 15vw auto 20vw; */
+  column-gap: 3rem;
+  position: relative;
+}
+.profile-photo{
+  /* width: 2rem;
+  height: 2rem; */
+  align-self: flex-start;
+  border: 3px solid hsl(252, 75%, 60%);
+  width: 2.7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+img{
+  display: block;
+  width: 100%;
+}
+
+/* feeds */
+.middle_container .feeds .feed{
+  background: hsl(252, 30%, 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}  
+
+/*5555555*/
+.middle_container .feed .head{
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle_container .feed .user{
+  display: flex;
+  gap: 1rem;
+}
+
+.middle_container .feed .photo{
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0.7rem 0;
+}
+
+.middle_container .feed .action-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  margin: 0.6rem;
+}
+
+.middle_container .liked-by{
+  display: flex;
+}
+
+.middle_container .liked-by span{
+  width: 1.4rem;
+  height: 1.4rem;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid hsl(252, 30%, 100%);
+  margin-left: -0.6rem;
+}
+
+.middle_container .liked-by span:first-child {
+  margin: 0;
+}
+
+.middle_container .liked-by p{
+  margin-left: 0.5rem;
+}
+
+
+
+
+
