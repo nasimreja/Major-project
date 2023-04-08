@@ -1,0 +1,106 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* height: 100vh; */
+}
+
+.card{
+     background: white;
+     padding: 1em;
+     border-radius: 0 0 20px rgba(0 ,0 ,0 ,0.089);
+}
+
+.post_header {
+     display: flex;
+     align-items: center;
+     margin-bottom: 0.4em;
+     position: relative;
+}
+
+.post_header i{
+     position: absolute;
+     right: 0;
+}
+
+.heading{
+     margin-left: 0.4em;
+}
+
+.heading .main_heading{
+     font-size: 0.8em;
+}
+
+.heading .sub_heading{
+     font-size: 0.6em;
+     color: rgba(0, 0, 0, 0.836);
+}
+
+.post_header img{
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.432);
+}
+
+.post_img video{
+     width: 300px;
+     height: 300px;
+     border-radius: 15px;
+     box-shadow: 0px 10px 20px rgba(0 ,0 ,0 ,0.397);
+}
+
+.post_footer{
+     width: 100%;
+     height: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.btn{
+     position: relative;
+     width: 20px;
+     height: 20px;
+     appearance: none;
+     animation: none;
+     cursor: pointer;
+}
+
+.btn::before{
+     content: '\f004';
+     position: absolute;
+     top: 0;
+     left: 0;
+     font-family: system-ui;
+     font-size: 1.4em;
+     transition: all 1s ease-in-out;
+}
+
+.btn:checked::before{
+     content: '\f004';
+     font-weight: 700;
+     color: red;
+}
+
+.left_box{
+     margin-top: 0.8em;
+}
+
+.left_box img{
+     width: 45px;
+     height: 18px;
+     margin-left: 0.4em;
+     /* margin-top: 0.8em; */
+}
+
+.right_box img{
+     width: 45px;
+     height: 45px;
+}
